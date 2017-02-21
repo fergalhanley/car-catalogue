@@ -1,0 +1,136 @@
+
+* {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+html body {
+    margin: 0;
+}
+
+.flex-row-between {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.link-button {
+    background-color: #ffa722;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+}
+.link-button:visited {
+    color: white;
+}
+.link-button:hover {
+    cursor: pointer;
+    background-color: #ffc462;
+}
+
+.home-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    color: gray;
+    font-size: 3em;
+    text-align: center;
+}
+
+.home-page h2 {
+    color: gray;
+    font-size: 3em;
+    text-align: center;
+    margin: 0;
+}
+
+.car-of-the-week {
+    padding: 100px;
+    color: gray;
+}
+.car-of-the-week p {
+    font-size: 1.4em;
+}
+
+.review {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.review img {
+    width: 200px;
+    border-radius: 4px;
+    margin-right: 20px;
+}
+
+.review p {
+    min-width: 200px;
+}
+
+.search-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.search-page select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 10px 30px;
+    font-size: 24px;
+    margin: 10px;
+    width: 222px;
+    text-align-last: center;
+}
+
+.search-page .link-button {
+    font-size: 24px;
+    padding: 12px 20px;
+    margin: 10px;
+    display: block;
+    position: relative;
+    top: -1px;
+}
+
+.car-details img {
+    border-radius: 4px;
+    width: 320px;
+}
+
+.car-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.car-details p {
+    font-size: 1.4em;
+    color: gray;
+}
+
+@media(max-width: 900px) {
+    .car-of-the-week {
+        padding: 10px;
+        margin-top: 10px;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    .home-page h2 {
+        font-size: 2em;
+    }
+    .review {
+        flex-wrap: wrap-reverse;
+    }
+}
