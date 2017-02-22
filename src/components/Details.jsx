@@ -19,7 +19,7 @@ class Details extends Component {
             <div>
                 <h1>The Car Of Your Dreams</h1>
                 <div className="car-details">
-                    <div><img src={this.props.selectedModel.imageUrl}/> </div>
+                    <div><img src={this.props.selectedModel.imageUrl}/></div>
                     <p>{this.props.selectedModel.makeName} {this.props.selectedModel.name} - ${this.props.selectedModel.price}</p>
                 </div>
             </div>

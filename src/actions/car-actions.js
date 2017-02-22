@@ -43,6 +43,6 @@ export const clientInitData = landingData => {
     return {
         type: CAR_ACTIONS.CLIENT_INIT_DATA,
         initialData
-    }
+    };
 };
 

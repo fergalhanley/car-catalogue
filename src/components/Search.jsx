@@ -39,14 +39,14 @@ class Search extends Component {
                 <h1>Find The Car Of Your Dreams</h1>
                 <div className="search-page">
                     <div>
-                        <select onChange={this.handleSelectMake.bind(this)} defaultValue={this.state.makeId}>
+                        <select id="makes_select" onChange={this.handleSelectMake.bind(this)} defaultValue={this.state.makeId}>
                             { this.props.makes.map( (make, i) =>
                                 <option key={i} value={make.id}>{make.name}</option>
                             )}
                         </select>
                     </div>
                     <div>
-                        <select onChange={this.handleSelectModel.bind(this)} defaultValue={this.state.modelId}>
+                        <select id="models_select" onChange={this.handleSelectModel.bind(this)} defaultValue={this.state.modelId}>
                             { this.props.models
                                 .filter( model => model.makeId === this.state.makeId )
                                 .map( (model, i) =>

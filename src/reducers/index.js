@@ -1,4 +1,4 @@
-import { combineReducers } from 'redux'
+import { combineReducers } from 'redux';
 import carReducer from './car-reducer';
 import { routerReducer } from 'react-router-redux';
 
