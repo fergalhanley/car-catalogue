@@ -13,6 +13,12 @@ npm run dev
 
 The development site can be viewed at [http://localhost:3000](http://localhost:3000)
 
+## Run tests
+
+```
+npm test
+```
+
 ## Build production
 
 ```
